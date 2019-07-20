@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <stdlib.h>
+#include <math.h>
 
 int is_prime(unsigned long long);
 void pf(unsigned long long);
@@ -51,7 +52,6 @@ void pf(unsigned long long n)
 
     for (int i = 3; i <= sqrt(n); i = i+2)
     {
-        // While i divides n, print i and divide n
         while (n%i == 0)
         {
             printf("%d ", i);
